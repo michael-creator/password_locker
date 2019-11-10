@@ -1,24 +1,24 @@
 import pyperclip
 
 class User:
- 
+
     '''
     this class generates instance of new users
     '''
     user_list = []
     def __init__(self, account ,username , email, password):
-    
+
         self.username = username,
         self.email = email,
         self.password = password,
     def save_user(self):
         '''
-        
+
         '''
         User.user_list.append(self)
     def delete_user(self):
         '''
-        
+
         '''
         User.user_list.remove(self)
     @classmethod

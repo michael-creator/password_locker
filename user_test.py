@@ -9,9 +9,9 @@ class TestUser(unittest.TestCase):
         '''
         
         '''
-        self.new_user = User("facebook""mickey","mikelkarije@gmail.com", "mickey22")
+        self.new_user = User("mickey","mikelkarije@gmail.com", "mickey22")
         
-        self.assertEqual(self.new_user.account,)
+    
         self.assertEqual(self.new_user.user_name,)
         self.assertEqual(self.new_user.email,)
         self.assertEqual(self.new_user.password,) 

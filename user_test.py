@@ -11,7 +11,10 @@ class TestUser(unittest.TestCase):
         '''
         self.new_user = User("mickey","mikelkarije@gmail.com", "mickey22")
         
-    
+       def test_init(self):
+        '''
+        test init tests if object in the user list are initialized correctly.
+        '''
         self.assertEqual(self.new_user.user_name,)
         self.assertEqual(self.new_user.email,)
         self.assertEqual(self.new_user.password,) 
@@ -23,7 +26,14 @@ class TestUser(unittest.TestCase):
         '''
         self.new_user.save_user() # saving the new user
         self.assertEqual(len(self),1)
+    def save_multiple_user(self):
+        '''
         
+        '''
+        self.new_user.save_user()
+        test_user = User("mickeey","user","ssssss@gmail.com")
+        test_user.save_user()
+        self.assertEqual(len(User.user_list),2)
         
         if __name__ ==  '__main__':
             unittest.main()

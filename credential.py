@@ -13,4 +13,12 @@ class Credential:
         method saves credentials objects into credential_list
         '''
         cls.credential_list.append(self)
-  
+    @classmethod
+    def generate_password(cls):
+        '''
+        generates a random alphanumeric password
+        '''
+         size = 8
+         alphanumeric= string.ascii.uppercase + string.digits + string.ascii_lowercase
+         password = ''.join(choice(alphanumeric)for num in range (size))
+        return password

@@ -37,8 +37,10 @@ class TestUser(unittest.TestCase):
     
      def test_display_all_user(self):
         '''
-        test_display_all_user returns a list of all users
+        test_display_all_user returns a list of all users in the list
         '''
         self.assertEqual(User.display_user(),User.user_list)
-        if __name__ ==  '__main__':
+    
+    
+    if __name__ ==  '__main__':
             unittest.main()

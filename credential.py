@@ -28,3 +28,8 @@ class Credential:
         This function displays credentials after saving
         '''
         return cls.credential_list
+      def del_credential(self):
+        '''
+        this function deletes credentials
+        '''
+        Credential.credential_list.remove(self)

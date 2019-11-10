@@ -6,7 +6,7 @@ class User:
     this class generates instance of new users
     '''
     user_list = []
-    def __init__(self, account ,username , email, password):
+    def __init__(self,username , email, password):
 
         self.username = username,
         self.email = email,
@@ -18,7 +18,7 @@ class User:
         User.user_list.append(self)
     def delete_user(self):
         '''
-        this method deletes users 
+        this method deletes users
         '''
         User.user_list.remove(self)
     @classmethod

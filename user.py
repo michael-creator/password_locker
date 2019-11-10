@@ -13,12 +13,12 @@ class User:
         self.password = password,
     def save_user(self):
         '''
-
+        function that adds user credentials to the user_list
         '''
         User.user_list.append(self)
     def delete_user(self):
         '''
-
+        this method deletes users 
         '''
         User.user_list.remove(self)
     @classmethod
@@ -33,6 +33,6 @@ class User:
     @classmethod
     def display_user(cls):
         '''
-        returns user list
+        returns user list with user account details
         '''
         return cls.user_list

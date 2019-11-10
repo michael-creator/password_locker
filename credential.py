@@ -22,3 +22,9 @@ class Credential:
          alphanumeric= string.ascii.uppercase + string.digits + string.ascii_lowercase
          password = ''.join(choice(alphanumeric)for num in range (size))
         return password
+    @classmethod
+    def display_credential(cls):
+        '''
+        This function displays credentials after saving
+        '''
+        return cls.credential_list

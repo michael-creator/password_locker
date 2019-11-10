@@ -7,3 +7,10 @@ class Credential:
      def __init__(self, app_title, password):
          self.app_title = app_title
          self.password = password
+    @classmethod
+    def save_credential(self):
+        '''
+        method saves credentials objects into credential_list
+        '''
+        cls.credential_list.append(self)
+  

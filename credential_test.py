@@ -8,7 +8,7 @@ from credential import Credential
 
 class TestUser():
     def setUp(self):
-        self.new_user = User("mickey","mikelkarije@gmail.com", "mickey22")
+        self.new_credential = User("facebook","mickey")
 
     def Test__init__(self, account, account_name,account_password ):
 

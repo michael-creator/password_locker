@@ -17,6 +17,17 @@ def save_users():
     user.Credential.save_user()
 
 
+def del_user(user):
+    '''
+    Function to delete a user
+    '''
+    user.delete_user()
+
+def display_user():
+    '''
+    function that displays users
+    ''' 
+    user.display_user()
 
     
     

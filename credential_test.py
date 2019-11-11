@@ -35,5 +35,6 @@ class Credential:
         '''
         This function displays credentials after saving
         '''
-
+        for credential in cls.credential_list:
+             return credential
   

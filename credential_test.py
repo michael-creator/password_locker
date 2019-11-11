@@ -19,8 +19,7 @@ class TestUser():
 
     def save_credential(self, account_name, password):
         '''
-        save_credential method saves credentials if __name__ == '__main__':
-    unittest.main()
+        save_credential method saves credentials 
 objects into credential_list
         '''
         Credential.credential_list.append(self)

@@ -10,5 +10,14 @@ def create_user(user_name,password):
     new_user = User(user_name ,password  )
 
 
+def save_users():
+    '''
+    Function to save user
+    '''
+    user.Credential.save_user()
+
+
+
+    
     
   

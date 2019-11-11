@@ -31,4 +31,9 @@ class Credential:
         password = ''.join(choice(alphanum) for num in range(size))
 
         return password
+      def display_credentials(cls):
+        '''
+        This function displays credentials after saving
+        '''
+
   
